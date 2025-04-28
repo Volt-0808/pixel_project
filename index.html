@@ -1,1 +1,73 @@
-
+<html>
+<head>
+    <title>PIXEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <img class = "img" src = "https://avatars.mds.yandex.net/i?id=977a2f51507111477ee788c8871c5a1aa681bec1-9052188-images-thumbs&n=13">
+            <h1 class = "title">Piksel</h1>
+            <p>Это сайт о создании пиксельных картинок и просмотра их</p>
+            <button id="button-header">Перейти к созданию</button>
+            <div id="instruction">
+                <p>Цвета - цифры начиная с 1</p>
+                <p>0 - ластик</p>
+                <p>f - выбор заливки</p>
+                <p>с - смена выбора цвета</p>
+                <p>d - заливка поля белым цветом</p>
+                <p>английская раскладка = русская расскладка</p>
+            </div>
+    </header>
+    <button id="back"><< back</button>
+    <div id="main">
+        <div>
+            <div id="func-container">
+                <div id="black"></div>
+                <div id="red"></div>
+                <div id="orange"></div>
+                <div id="yellow"></div>
+                <div id="green"></div>
+                <div id="blue"></div>
+                <div id="dark-blue"></div>
+                <div id="purple"></div>
+                <div id="pink"></div>
+                <div id="clear"></div>
+                <div id="fill"></div>
+            </div>
+        </div>
+        <div id="rgb-contaner">
+            <div id="color-column">
+                <div id="color-in"><div id="color"></div></div>
+                <div id="fill-output-in"><div id="fill-output"></div></div>
+            </div>
+            <div class="rgb-column">
+                <p id="p-red">R</p>
+                <input type="range" id = "r-slider" min="0" max="255" id="b" step="1" value="0">
+                <p id="p-red-output">0</p>
+            </div>
+            <div class="rgb-column">
+                <p id="p-green">G</p>
+                <input type="range" id = "g-slider" min="0" max="255" id="b" step="1" value="0">
+                <p id="p-green-output">0</p>
+            </div>
+            <div class="rgb-column">
+                <p id="p-blue">B</p>
+                <input type="range" id = "b-slider" min="0" max="255" id="b" step="1" value="0">
+                <p id="p-blue-output">0</p>
+            </div>
+            <input type = "color" id="choose-color">
+        </div>
+        <div id="right-side">
+            <div id="undo-redo-download">
+                <div id="undo"> < </div>
+                <div id="redo"> > </div>
+                <div id="download"></div>
+            </div>
+            <div id="grid-container"></div>
+        </div>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
